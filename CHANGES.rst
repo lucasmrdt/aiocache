@@ -22,6 +22,8 @@ There are a number of backwards-incompatible changes. These points should help w
   * The cache key type used by the backend must now be specified when inheriting (e.g. ``BaseCache[str]`` typically).
   * The ``build_key()`` method must now be defined (this should generally involve calling ``self._str_build_key()`` as a helper).
 
+* Added ``LimitedSizeMemoryCache`` backend with an optional global size limit.
+
 
 0.12.0 (2023-01-13)
 ===================
